@@ -1,13 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import Button from './componnents/butoon';
+
+
 function App() {
     return (
         <div className="App">
-            <Button />
+            <h1>Hello</h1>
         </div>
     );
 }
 
 export default App;
-
