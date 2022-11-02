@@ -7,8 +7,6 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <Link to="/following">Following</Link> <br />
-                <Link to="/">Home</Link>
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         let Layout = DefaultLayout;
@@ -20,9 +18,7 @@ function App() {
                         }
 
                         const Page = route.Component;
-                        {
-                            /* console.log(<Layout/>); */
-                        }
+
                         return (
                             <Route
                                 key={index}
