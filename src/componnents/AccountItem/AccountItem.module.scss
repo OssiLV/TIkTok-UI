@@ -1,0 +1,55 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 9px 16px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: rgba(136, 136, 136, 0.5);
+    margin-right: 16px;
+}
+
+.info {
+    flex: 1;
+
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    
+    h4 {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.icon {
+    margin-left: 4px;
+    color: rgb(32, 213, 236);
+    line-height: 0.1;
+}
+
+.user-name {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
