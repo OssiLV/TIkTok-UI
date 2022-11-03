@@ -3,6 +3,10 @@
 
 :root {
     --primary: #fe2c55;
+    --default-layout-height: 60px;
+    --default-layout-width: 1150px;
+    --black: #000;
+    --text-color: #333;
 }
 
 * {
@@ -20,4 +24,13 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    color: var(--text-color);
+    outline: none;
+    border: none;
+    text-decoration: none;
 }

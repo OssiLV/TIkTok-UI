@@ -4,8 +4,6 @@ import Profile from '~/pages/Profile';
 import Search from '~/pages/Search';
 import Upload from '~/pages/Upload';
 
-
-
 //Custom layouts
 import { HeaderOnly } from '~/componnents/Layout';
 
