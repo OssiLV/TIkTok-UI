@@ -6,7 +6,6 @@
     --default-layout-height: 60px;
     --default-layout-width: 1150px;
     --black: #000;
-    --white: #fff;
     --text-color: #333;
 }
 
@@ -26,7 +25,7 @@ body {
     line-height: 1.5;
     text-rendering: optimizeSpeed;
 }
-a,
+
 button,
 input,
 [tabindex] {

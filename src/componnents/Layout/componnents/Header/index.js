@@ -4,8 +4,6 @@ import {
     faCircleXmark,
     faSpinner,
     faMagnifyingGlass,
-    faPlus,
-    faEllipsisVertical,
 } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css'; // optional
@@ -15,7 +13,6 @@ import images from '~/assets/images';
 import { useEffect, useState } from 'react';
 import { Wrapper as WrapperPopupSearch } from '~/componnents/PopupSearch';
 import AccountItem from '~/componnents/AccountItem';
-import Button from '~/componnents/Button';
 
 const cx = classNames.bind(styles);
 
@@ -24,10 +21,9 @@ function Header() {
 
     useEffect(() => {
         setTimeout(() => {
-            setSearchResult([1]);
+            setSearchResult([1, 2, 3]);
         }, 0);
     }, []);
-
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
@@ -46,12 +42,11 @@ function Header() {
                             {...attrs}
                         >
                             <WrapperPopupSearch>
-                                <h4 className={cx('search-label')}>Accounts</h4>
-                                <AccountItem />
-                                <AccountItem />
-                                <AccountItem />
-                                <AccountItem />
-                                <AccountItem />
+                                <h4 className={cx('search-label')}>Accoutns</h4>
+                                <AccountItem/>
+                                <AccountItem/>
+                                <AccountItem/>
+                                <AccountItem/>
                             </WrapperPopupSearch>
                         </div>
                     )}
@@ -76,18 +71,7 @@ function Header() {
                         </button>
                     </div>
                 </Tippy>
-                <div className={cx('action')}>
-                    <Button
-                        btn_text
-                        leftIcon={<FontAwesomeIcon icon={faPlus} />}
-                    >
-                        Upload
-                    </Button>
-                    <Button primary>Log in</Button>
-                    <i className={cx('menu')}>
-                        <FontAwesomeIcon icon={faEllipsisVertical} />
-                    </i>
-                </div>
+                <div className={cx('action')}></div>
             </div>
         </header>
     );
